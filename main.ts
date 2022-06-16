@@ -1,5 +1,6 @@
 let mano = 0
 input.onGesture(Gesture.Shake, function () {
+    music.playTone(262, music.beat(BeatFraction.Whole))
     mano = randint(1, 3)
     if (mano == 1) {
         basic.showLeds(`
